@@ -7,7 +7,7 @@ function App() {
   const [popped, setPopped] = useState([]);
 
   const PlaceCircle = (e) => {
-    console.log(e);
+    // console.log(e);
     const { clientX, clientY } = e;
     setPoints([...points, { clientX, clientY }]);
   };
