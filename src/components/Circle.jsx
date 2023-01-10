@@ -1,12 +1,8 @@
 
-
 const Circle = () => {
 
-    return (
-        <div className="circle">
+  return <div style={{ width: '15px', height: '15px', backgroundColor: 'purple', borderRadius: '50%' }}> </div>;
 
-        </div>
-    )
-}
+};
 
 export default Circle;

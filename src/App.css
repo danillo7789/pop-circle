@@ -12,9 +12,22 @@
   position: absolute;
 }
 
-.circle {
+/* .circle {
   width: 15px;
   height: 15px;
   background-color: purple;
   border-radius: 50%;
+} */
+
+.buttons{
+  width: 15%;
+  margin: auto;
+}
+.btnUndo {
+  background-color: rgb(223, 121, 121);
+  font-weight: 800;
+}
+.btnRedo{
+  background-color: rgb(110, 213, 110);
+  font-weight: 800;
 }

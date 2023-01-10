@@ -26,14 +26,16 @@ function App() {
     const popRedo = newPopped.pop();
     if (!popRedo) return;
     setPopped(newPopped);
-    setPoints([...points, popRedo])
-  }
+    setPoints([...points, popRedo]);
+  };
 
   return (
     <>
-      <button disabled={points.length === 0} onClick={handleUndo}>Undo</button>
-      {/* to disable d redo button when there's nothing else to redo */}
-      <button disabled={popped.length === 0} onClick={handleRedo}>Redo</button>
+      <div className="buttons">
+        <button className="btnUndo" disabled={points.length === 0} onClick={handleUndo}> Undo </button>
+        {/* to disable d redo button when there's nothing else to redo */}
+        <button className="btnRedo" disabled={popped.length === 0} onClick={handleRedo}> Redo </button>
+      </div>
 
       <div className="App" onClick={PlaceCircle}>
         {points.map((point, index) => (
